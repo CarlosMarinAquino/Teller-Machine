@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/dashboard.css" />
+    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="theLogo">
+          <img src="./cochiBank.png" alt="logo" class="logo" />
+        </div>
+        <div class="theUser">
+          <img class="UserImage" id="userPhoto" src="" alt="user image" />
+          <div id="useTextName">Welcome <span id="userObjectName"></span></div>
+          <div id="balanceContainer">
+            Your balance is: $<span id="balanceObject"></span>.00
+          </div>
+          <div id="countDown">
+            <div>Session expires in</div>
+            <div id="sessionTime"></div>
+          </div>
+        </div>
+
+        <div class="theExit">
+          <button class="LogOutButton" id="logOut">Log Out</button>
+        </div>
+      </nav>
+    </header>
+    <section class="superContainer">
+      <div class="container">
+        <div class="buttons">
+          <div id="display"></div>
+          <div class="rowSet">
+            <div class="button">7</div>
+            <div class="button">8</div>
+            <div class="button">9</div>
+          </div>
+          <div class="rowSet">
+            <div class="button">4</div>
+            <div class="button">5</div>
+            <div class="button">6</div>
+          </div>
+          <div class="rowSet">
+            <div class="button">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+          </div>
+          <div class="rowSet">
+            <div class="button">0</div>
+          </div>
+        </div>
+        <div class="confirmationsButtons">
+          <button class="action-button" id="Withdraw">Withdraw</button>
+          <button class="action-button" id="Deposit">Deposit</button>
+          <button class="action-button" id="Delete">&larr;Undo</button>
+          <button class="action-button" id="Clear">Clear</button>
+        </div>
+      </div>
+    </section>
+    <script src="/js/storageEngine.js"></script>
+    <script src="/js/operationFunctions.js"></script>
+    <script src="/js/ATM.js"></script>
+    <script src="/js/countdown.js"></script>
+  </body>
+</html>

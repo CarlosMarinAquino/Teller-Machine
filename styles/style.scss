@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(-45deg, #3d23b1, #0055ff, #022f91, #c623d5);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.form {
+  background-color: #ffffff;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  min-width: 28rem;
+  max-width: 32rem;
+  box-shadow: rgba(3, 3, 36, 0.692) 0 15px 30px -5px;
+  h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid silver;
+  }
+  form {
+    margin: 1rem;
+  }
+  input {
+    width: 100%;
+    margin-top: 2rem;
+    height: 4rem;
+    font-size: 1.4rem;
+    border: none;
+    border-bottom: 0.15rem solid rgb(163, 163, 163);
+    padding: 0 0.5rem;
+    outline: none;
+  }
+}
+#imgConteiner {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.logo {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.form input:hover {
+  border-bottom: 0.15rem solid #0086da;
+}
+
+.form input::placeholder {
+  color: rgb(82, 82, 82);
+}
+
+.form form p {
+  font-size: 1.3rem;
+  padding: 3rem 0 0 0.5rem;
+  color: rgb(163, 163, 163);
+}
+
+.form form p:hover {
+  color: rgb(80, 80, 80);
+  cursor: pointer;
+}
+
+.form button[type="button"] {
+  display: block;
+  margin: 2rem auto;
+  font-size: 1.6rem;
+  width: 90%;
+  padding: 0.9rem 0;
+  border-radius: 1.7rem;
+  border: none;
+  background-color: #0086da;
+  color: #ffffff;
+}
+
+button {
+  cursor: pointer;
+  align-items: center;
+  background-image: linear-gradient(144deg, #064ca8, #426bf3 50%, #00a8eb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:active,
+button:hover {
+  outline: 0;
+}
+
+button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+button:hover span {
+  background: none;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.form .login-message {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.form .login-message span {
+  color: #007ecc;
+  font-weight: 600;
+}
+
+.form .login-message span:hover {
+  cursor: pointer;
+}
